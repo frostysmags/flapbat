@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c6c4bbbb34a4cb40b0faab83ca7d013, type: 3}
+  m_Name: cave
+  m_EditorClassIdentifier: 
+  obstacles:
+  - {fileID: 21300000, guid: 3abca85333b65174f8b63aba751d98ce, type: 3}
+  - {fileID: 21300000, guid: 10b27e7074fc4a04ba5f426cd498169a, type: 3}
+  - {fileID: 21300000, guid: 4145916ca5199e64186a494d7b68e565, type: 3}
+  - {fileID: 21300000, guid: c0ba8a105eb266c4d89ad19029ffefcd, type: 3}
+  - {fileID: 21300000, guid: 5a8363e3d18c52f4baf9fbbc01eb8ed9, type: 3}
+  - {fileID: 21300000, guid: 3551133f85bc2064cb1245586dd558c7, type: 3}
+  backgrounds:
+  - {fileID: 21300000, guid: e8fbf5bee47b907499ba90e6db11c8fc, type: 3}
+  bounds:
+  - {fileID: 21300000, guid: 9affb5e090f91df4e9239606bcc7e952, type: 3}
