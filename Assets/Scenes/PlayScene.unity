@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2763129861216177885, guid: 8ca9beda5f351284393b3ffc66439595, type: 3}
+      propertyPath: batSelected
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9198428011690533256, guid: 8ca9beda5f351284393b3ffc66439595, type: 3}
       propertyPath: m_Simulated
       value: 1
