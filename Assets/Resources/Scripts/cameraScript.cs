@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class cameraScript : MonoBehaviour
 {
-    private float shakeTime = 2.5f;
+    private float shakeTime = 0.5f;
+    private float leftRight = 0;
+    private float bounds = .1f;
+    private float shakeSpeed = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +17,20 @@ public class cameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (leftRight >= bounds || leftRight <= -bounds)
+        {
+            shakeSpeed *= -1;
+        }
         if (gameControllerVariables.gameEnd == true && shakeTime > 0)
         {
-            gameObject.transform.position = new Vector2(Mathf.Sin(9)*2.5f, transform.position.y);
+            leftRight += shakeSpeed * Time.deltaTime;
+            gameObject.transform.position = new Vector2(leftRight, transform.position.y);
             shakeTime -= 1 * Time.deltaTime;
+        }
+        if (shakeTime <= 0)
+        {
+            gameObject.transform.position = new Vector2(0, 0);
+
         }
     }
 }

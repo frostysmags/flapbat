@@ -91,7 +91,7 @@ public class Controller_Player : MonoBehaviour
         if (collision.gameObject.tag == "Boundary")
         {
             gameControllerVariables.gameEnd = true;
-            spriteInt = 0;
+            spriteInt = 1;
         }
     }
 
